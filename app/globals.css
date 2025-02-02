@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.rain-container {
+  overflow: hidden;
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.rain-drop {
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  background: linear-gradient(transparent, #4a90e2);
+  animation: rain linear infinite;
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+@keyframes rain {
+  0% {
+    transform: translateY(-10vh);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}

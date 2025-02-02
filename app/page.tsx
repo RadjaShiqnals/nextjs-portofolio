@@ -16,19 +16,22 @@ export default function Home() {
         <h1 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text animate-gradient">
           Welcome to My Portfolio
         </h1>
+        <p className="text-red-500 font-semibold">
+          This site is still under construction.
+        </p>
         <p className="text-gray-400 max-w-2xl">
           I'm a passionate developer who loves creating beautiful and functional web experiences.
           Let's build something amazing together.
         </p>
         <div className="flex gap-4">
           <a
-            href="#contact"
+            href="/about"
             className="px-6 py-3 bg-white/[.06] rounded-lg hover:bg-white/[.1] transition-colors"
           >
-            Contact Me
+            About Me
           </a>
           <a
-            href="#projects"
+            href="/projects"
             className="px-6 py-3 bg-white/[.06] rounded-lg hover:bg-white/[.1] transition-colors"
           >
             View Projects

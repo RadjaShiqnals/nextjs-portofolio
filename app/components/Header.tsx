@@ -15,7 +15,7 @@ export default function Header() {
             href="/"
             className="text-xl font-bold text-white"
           >
-            Logo
+            <img src="https://dummyimage.com/200x200/fff/000.jpg&text=RadjaShiqnals" alt="Logo" className="w-10 h-10 rounded-full" />
           </Link>
 
           {/* Desktop Menu */}
