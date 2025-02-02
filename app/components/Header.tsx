@@ -21,22 +21,34 @@ export default function Header() {
           {/* Desktop Menu */}
           <ul className="hidden md:flex items-center gap-6">
             <li>
-              <Link 
+                <Link 
                 href="/"
                 className={`text-sm transition-colors hover:text-gray-300 ${
-                  pathname === "/" ? "text-white" : "text-gray-400"
+                    pathname === "/" ? "text-white" : "text-gray-400"
                 }`}
-              >
+                >
                 Home
-              </Link>
+                </Link>
             </li>
             <li>
-              <Link 
-                href="#"
-                className="text-sm text-gray-400 transition-colors hover:text-gray-300"
-              >
-                Example Link
-              </Link>
+                <Link 
+                href="/about"
+                className={`text-sm transition-colors hover:text-gray-300 ${
+                    pathname === "/about" ? "text-white" : "text-gray-400"
+                }`}
+                >
+                About
+                </Link>
+            </li>
+            <li>
+                <Link 
+                href="/projects"
+                className={`text-sm transition-colors hover:text-gray-300 ${
+                    pathname === "/projects" ? "text-white" : "text-gray-400"
+                }`}
+                >
+                Projects
+                </Link>
             </li>
           </ul>
 
@@ -85,11 +97,24 @@ export default function Header() {
             </li>
             <li>
               <Link 
-                href="#"
-                className="text-lg text-gray-400 transition-colors hover:text-gray-300"
+                href="/about"
+                className={`text-lg transition-colors hover:text-gray-300 ${
+                  pathname === "/" ? "text-white" : "text-gray-400"
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Example Link
+                About
+              </Link>
+            </li>
+            <li>
+              <Link 
+                href="/projects"
+                className={`text-lg transition-colors hover:text-gray-300 ${
+                  pathname === "/" ? "text-white" : "text-gray-400"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Projects
               </Link>
             </li>
           </ul>
